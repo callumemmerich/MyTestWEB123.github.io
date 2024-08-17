@@ -7,12 +7,12 @@
 
 body {
     line-height: 1.6;
-    background-color: #eef2f3;
-    color: #333;
+    background-color: #2c2a4a;
+    color: #f0f8ff;
 }
 
 header {
-    background: #2a9d8f;
+    background: #4b3a6f;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header {
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
 }
 
@@ -42,11 +42,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #264653;
+    color: #8b7aa6;
 }
 
 .hero {
-    background-image: url('images/earth.jpg');
+    background-image: url('images/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -58,18 +58,18 @@ header nav ul li a:hover {
 }
 
 .hero .hero-text h1 {
-    font-size: 48px;
+    font-size: 52px;
     margin-bottom: 10px;
 }
 
 .hero .hero-text p {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
 .hero .btn {
-    padding: 10px 20px;
-    background: #f4a261;
+    padding: 12px 24px;
+    background: #ef476f;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -77,10 +77,10 @@ header nav ul li a:hover {
 }
 
 .hero .btn:hover {
-    background: #e76f51;
+    background: #d43a5a;
 }
 
-.about, .topics, .quiz, .contact {
+.topics, .quiz, .contact {
     padding: 60px 20px;
     text-align: center;
 }
@@ -92,40 +92,36 @@ header nav ul li a:hover {
 }
 
 .topic-item {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
+    background: #3d366b;
+    border-radius: 10px;
+    padding: 30px;
     margin: 20px;
-    width: 300px;
+    width: 320px;
     text-align: center;
-    transition: box-shadow 0.3s;
+    transition: transform 0.3s;
 }
 
 .topic-item:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.topic-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    transform: scale(1.05);
 }
 
 .topic-item h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 26px;
+    margin-bottom: 15px;
 }
 
 .topic-item p {
     margin-bottom: 10px;
-    color: #666;
+    color: #ddd;
+}
+
+.chart-container {
+    margin-top: 20px;
 }
 
 .quiz .btn {
-    padding: 10px 20px;
-    background: #2a9d8f;
+    padding: 12px 24px;
+    background: #ef476f;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -134,7 +130,7 @@ header nav ul li a:hover {
 }
 
 .quiz .btn:hover {
-    background: #21867a;
+    background: #d43a5a;
 }
 
 .quiz-container {
@@ -142,12 +138,12 @@ header nav ul li a:hover {
 }
 
 #question {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 10px;
 }
 
 #options button {
-    background: #f4a261;
+    background: #f77f00;
     color: #fff;
     padding: 10px;
     border: none;
@@ -158,13 +154,13 @@ header nav ul li a:hover {
 }
 
 #options button:hover {
-    background: #e76f51;
+    background: #e07a00;
 }
 
 .result {
     margin-top: 20px;
-    font-size: 24px;
-    color: #2a9d8f;
+    font-size: 26px;
+    color: #06d6a0;
 }
 
 .contact form {
@@ -182,7 +178,7 @@ header nav ul li a:hover {
 }
 
 .contact form .btn {
-    background: #2a9d8f;
+    background: #06d6a0;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -190,11 +186,11 @@ header nav ul li a:hover {
 }
 
 .contact form .btn:hover {
-    background: #21867a;
+    background: #05b088;
 }
 
 footer {
-    background: #264653;
+    background: #3d366b;
     color: #fff;
     text-align: center;
     padding: 10px;
