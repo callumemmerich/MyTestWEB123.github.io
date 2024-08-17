@@ -7,12 +7,12 @@
 
 body {
     line-height: 1.6;
-    background-color: #f0f8f7;
+    background-color: #eef2f3;
     color: #333;
 }
 
 header {
-    background: #56b48c;
+    background: #2a9d8f;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -42,11 +42,11 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #f0f8f7;
+    color: #264653;
 }
 
 .hero {
-    background-image: url('images/hero.jpg');
+    background-image: url('images/earth.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
@@ -80,18 +80,18 @@ header nav ul li a:hover {
     background: #e76f51;
 }
 
-.about, .products, .contact {
+.about, .topics, .quiz, .contact {
     padding: 60px 20px;
     text-align: center;
 }
 
-.products .product-list {
+.topics .topic-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.product-item {
+.topic-item {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -102,30 +102,30 @@ header nav ul li a:hover {
     transition: box-shadow 0.3s;
 }
 
-.product-item:hover {
+.topic-item:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product-item img {
+.topic-item img {
     width: 100%;
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.product-item h3 {
+.topic-item h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.product-item p {
+.topic-item p {
     margin-bottom: 10px;
     color: #666;
 }
 
-.product-item .btn {
+.quiz .btn {
     padding: 10px 20px;
-    background: #56b48c;
+    background: #2a9d8f;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -133,8 +133,38 @@ header nav ul li a:hover {
     transition: background 0.3s;
 }
 
-.product-item .btn:hover {
-    background: #499f7d;
+.quiz .btn:hover {
+    background: #21867a;
+}
+
+.quiz-container {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#options button {
+    background: #f4a261;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#options button:hover {
+    background: #e76f51;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #2a9d8f;
 }
 
 .contact form {
@@ -152,7 +182,7 @@ header nav ul li a:hover {
 }
 
 .contact form .btn {
-    background: #56b48c;
+    background: #2a9d8f;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -160,11 +190,11 @@ header nav ul li a:hover {
 }
 
 .contact form .btn:hover {
-    background: #499f7d;
+    background: #21867a;
 }
 
 footer {
-    background: #333;
+    background: #264653;
     color: #fff;
     text-align: center;
     padding: 10px;
