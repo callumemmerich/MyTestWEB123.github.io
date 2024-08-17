@@ -5,9 +5,9 @@ const quizData = [
         answer: "Fossil Fuels"
     },
     {
-        question: "Which of the following contributes most to ocean pollution?",
-        options: ["Plastic Waste", "Oil Spills", "Agricultural Runoff", "Fishing Nets"],
-        answer: "Plastic Waste"
+        question: "Which country has the largest stock market?",
+        options: ["China", "United States", "Japan", "Germany"],
+        answer: "United States"
     },
     {
         question: "Why is biodiversity important?",
@@ -25,4 +25,17 @@ function startQuiz() {
 }
 
 function loadQuestion() {
-    const questionData = quizData
+    const questionData = quizData[currentQuestionIndex];
+    document.getElementById("question").textContent = questionData.question;
+    const optionsContainer = document.getElementById("options");
+    optionsContainer.innerHTML = "";
+    questionData.options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.onclick = () => checkAnswer(option);
+        optionsContainer.appendChild(button);
+    });
+}
+
+function checkAnswer(selectedOption) {
+    const questionData = quizData[current
