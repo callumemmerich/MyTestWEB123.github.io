@@ -1,17 +1,74 @@
-<! DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="MyTestWEB123">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFriendly Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
 <body>
-  <h1>
-    The Amazing Me
-  </h1>
-  <p>
-    <strong>Good Morning EveryOne And Welcome to My Class7 Biography Project</strong>
-  </p>
-  <nav>
-    <a href="za.ixl.com">IXL Page LEARN Maths>
-  </nav>
+    <header>
+        <div class="logo">EcoFriendly Store</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Choose Sustainability</h1>
+            <p>Shop our range of eco-friendly products and make a difference.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing eco-friendly alternatives to everyday products. Our mission is to help you make sustainable choices without compromising on quality or style.</p>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Bamboo Toothbrush</h3>
+                <p>Eco-friendly and biodegradable toothbrush made from bamboo.</p>
+                <button class="btn" onclick="addToCart('Bamboo Toothbrush')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Reusable Shopping Bag</h3>
+                <p>Stylish and durable bag made from recycled materials.</p>
+                <button class="btn" onclick="addToCart('Reusable Shopping Bag')">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <img src="images/product3.jpg" alt="Product 3">
+                <h3>Stainless Steel Straw</h3>
+                <p>Reusable and eco-friendly straw with a cleaning brush.</p>
+                <button class="btn" onclick="addToCart('Stainless Steel Straw')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EcoFriendly Store. All rights reserved.</p>
+    </footer>
 </body>
 </html>
